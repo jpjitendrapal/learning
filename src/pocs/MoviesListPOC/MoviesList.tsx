@@ -54,14 +54,14 @@ const MoviesList = () => {
       <div style={{ padding: '2rem', textAlign: 'center', border: '1px solid #ef4444', borderRadius: '8px', background: 'rgba(239, 68, 68, 0.1)' }}>
         <h3 style={{ color: '#ef4444' }}>Error</h3>
         <p style={{ color: '#f87171' }}>{error}</p>
-        <button 
+        <button
           onClick={fetchMovies}
-          style={{ 
-            marginTop: '1rem', 
-            padding: '0.5rem 1rem', 
-            background: '#ef4444', 
-            color: 'white', 
-            border: 'none', 
+          style={{
+            marginTop: '1rem',
+            padding: '0.5rem 1rem',
+            background: '#ef4444',
+            color: 'white',
+            border: 'none',
             borderRadius: '4px',
             cursor: 'pointer'
           }}
@@ -77,12 +77,12 @@ const MoviesList = () => {
       <h2 style={{ color: '#f8fafc', marginBottom: '1.5rem' }}>Top Movies</h2>
       <div style={{ display: 'grid', gap: '1rem' }}>
         {movies.map((movie) => (
-          <div 
-            key={movie.id} 
-            style={{ 
-              padding: '1rem', 
-              background: '#1e293b', 
-              borderRadius: '8px', 
+          <div
+            key={movie.id}
+            style={{
+              padding: '1rem',
+              background: '#1e293b',
+              borderRadius: '8px',
               border: '1px solid #334155',
               display: 'flex',
               justifyContent: 'space-between',
